@@ -1,5 +1,6 @@
 # LLM Cost Autopilot
 
+LLM Cost Autopilot routes prompts by complexity to reduce LLM inference cost while tracking quality, latency, and estimated savings against a high-tier baseline.
 
 ## Architecture Overview
 
