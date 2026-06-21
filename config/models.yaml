@@ -1,0 +1,59 @@
+models:
+  deepseek_v4_flash:
+    provider: openrouter
+    model_id: deepseek/deepseek-v4-flash
+    display_name: DeepSeek V4 Flash
+    quality_tier: low
+    input_cost_per_1m: 0.09
+    output_cost_per_1m: 0.18
+    context_window: 1000000
+    use_for:
+      - simple_rewrite
+      - extraction
+      - formatting
+      - short_qa
+      - simple_json
+
+  gpt_5_4_mini:
+    provider: openai
+    model_id: gpt-5.4-mini
+    display_name: GPT-5.4 Mini
+    quality_tier: medium
+    input_cost_per_1m: 0.75
+    output_cost_per_1m: 4.50
+    context_window: 270000
+    use_for:
+      - summarization
+      - classification
+      - structured_analysis
+      - moderate_reasoning
+      - business_writing
+
+  gpt_5_5:
+    provider: openai
+    model_id: gpt-5.5
+    display_name: GPT-5.5
+    quality_tier: high
+    input_cost_per_1m: 5.00
+    output_cost_per_1m: 30.00
+    context_window: 270000
+    use_for:
+      - complex_reasoning
+      - code_debugging
+      - architecture_design
+      - nuanced_judgment
+      - final_verification
+
+  deepseek_v4_pro:
+    provider: openrouter
+    model_id: deepseek/deepseek-v4-pro
+    display_name: DeepSeek V4 Pro
+    quality_tier: medium_high
+    input_cost_per_1m: 0.435
+    output_cost_per_1m: 0.87
+    context_window: 1000000
+    use_for:
+      - fallback_complex
+      - long_context_analysis
+      - cheaper_reasoning_backup
+

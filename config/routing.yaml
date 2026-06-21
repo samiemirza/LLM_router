@@ -1,0 +1,36 @@
+routing:
+  simple:
+    primary_model: deepseek_v4_flash
+    fallback_model: gpt_5_4_mini
+
+  moderate:
+    primary_model: gpt_5_4_mini
+    fallback_model: deepseek_v4_pro
+
+  complex:
+    primary_model: gpt_5_5
+    fallback_model: deepseek_v4_pro
+
+verification:
+  enabled: true
+  mode: sampled
+  sample_rate: 0.20
+  verifier_model: gpt_5_5
+  pass_threshold: 4.0
+
+baseline:
+  model: gpt_5_5
+  description: "Used to calculate what cost would have been if every request went to the strongest model."
+
+dashboard:
+  type: streamlit
+  show_metrics:
+    - total_actual_cost
+    - baseline_cost
+    - estimated_savings
+    - savings_percent
+    - routing_distribution
+    - average_latency_by_model
+    - quality_pass_rate
+    - escalation_rate
+

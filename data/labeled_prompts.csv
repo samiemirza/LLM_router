@@ -1,0 +1,91 @@
+prompt,label
+Rewrite this email to sound more professional: I need the report by tonight.,simple
+Fix the grammar in this sentence: She dont know where the files is.,simple
+Convert this paragraph into three bullet points.,simple
+Extract the email address from this text: Contact Ahmed at ahmed@example.com.,simple
+Extract the phone number from this message: Please call 03001234567 after lunch.,simple
+Rewrite this message in a polite tone: Send me the update now.,simple
+Make this sentence shorter: The reason I am writing is because I wanted to ask.,simple
+Convert this list into a comma-separated format: apples bananas oranges mangoes.,simple
+Return the following name and email as JSON: Sara Khan sara.khan@example.com.,simple
+Fix capitalization in this sentence: i am applying for the data analyst role.,simple
+Rewrite this LinkedIn message to sound friendly and concise.,simple
+Extract the company name from this sentence: I worked at Systems Limited.,simple
+Convert this text into title case: introduction to machine learning pipelines.,simple
+Remove duplicate words from this sentence: This is is very very simple.,simple
+Summarize this one sentence into fewer words.,simple
+Format this address neatly: house 12 street 5 dha phase 6 karachi.,simple
+Turn this casual message into a formal email sentence: Hey can you check my CV.,simple
+Extract the date from this sentence: The interview is scheduled for 25 June 2026.,simple
+Convert this sentence into past tense: I am working on the dashboard.,simple
+Return only the city mentioned here: The event is in Islamabad.,simple
+Clean up this sentence without changing the meaning.,simple
+Rewrite this complaint so it sounds calm and professional.,simple
+Extract the invoice number from this message: Invoice INV-2048 is overdue.,simple
+Convert these words into a numbered list: cost latency quality routing.,simple
+Fix spelling mistakes in this line.,simple
+"Return a JSON object with name, role, and company from this text.",simple
+Make this Slack message less direct: You forgot the attachment.,simple
+Extract the amount from this sentence: The total cost was $42.75.,simple
+Turn this sentence into a resume bullet.,simple
+Format this meeting time clearly: fri 3pm pakistan time.,simple
+Summarize this product update into an executive brief with risks and next steps.,moderate
+Compare FastAPI and Flask for a small internal ML service.,moderate
+"Classify these customer tickets into billing, technical, and account categories.",moderate
+Write a concise business email explaining a delayed project timeline.,moderate
+Create a table comparing three cloud storage options for a startup.,moderate
+Analyze this user feedback and identify the top three product themes.,moderate
+"Summarize this meeting transcript into decisions, owners, and deadlines.",moderate
+Draft a project proposal for an AI support chatbot MVP.,moderate
+Turn these notes into a structured implementation plan.,moderate
+Categorize these prompts by likely complexity tier.,moderate
+Compare two pricing strategies for an API product.,moderate
+Write a short recommendation for which database to use in an MVP.,moderate
+Summarize a technical blog post for a non-technical stakeholder.,moderate
+Create a JSON schema for a simple customer profile object.,moderate
+Explain the tradeoffs between SQLite and PostgreSQL for a portfolio project.,moderate
+Review this product spec and list missing requirements.,moderate
+Build a markdown table of model options with cost and quality columns.,moderate
+Write a professional response to a customer asking for a refund.,moderate
+Summarize key metrics from this dashboard description.,moderate
+Classify these support messages by urgency and topic.,moderate
+Create interview talking points for an AI engineering project.,moderate
+Compare batch evaluation and online evaluation for LLM routing.,moderate
+Write acceptance criteria for a cost tracking API endpoint.,moderate
+Analyze these logs and identify likely operational issues.,moderate
+Create a short onboarding guide for a new API user.,moderate
+Summarize this policy document into practical action items.,moderate
+Draft release notes for a new dashboard feature.,moderate
+Compare the risks of using a small model versus a large model.,moderate
+Turn this rough project outline into a clear README section.,moderate
+Recommend a simple evaluation plan for an LLM router MVP.,moderate
+Debug this Python traceback and explain the root cause plus a safe fix.,complex
+Design the architecture for a multi-tenant LLM gateway with audit logging.,complex
+Create a strategy for reducing LLM cost without hurting answer quality.,complex
+Analyze this incident timeline and identify systemic failures and mitigations.,complex
+Refactor this codebase plan to improve maintainability and testability.,complex
+Design an evaluation framework for routing prompts across multiple LLM providers.,complex
+Explain step by step how to migrate a synchronous API to async safely.,complex
+Build a nuanced argument for whether to use LLM-as-judge in production.,complex
+Optimize this SQL query and explain why the current plan is slow.,complex
+Design a fallback system for provider outages and partial API failures.,complex
+Analyze security risks in an OpenAI-compatible proxy service.,complex
+Create an architecture decision record for choosing SQLite in an MVP.,complex
+Debug a failing Docker Compose setup with API and dashboard services.,complex
+"Design prompt routing rules for conflicting cost, latency, and quality goals.",complex
+Evaluate the tradeoffs of classifier-driven routing versus rules-only routing.,complex
+Write a detailed implementation plan for observability in an LLM platform.,complex
+Analyze model pricing changes and propose a robust configuration strategy.,complex
+Design a test strategy for avoiding paid API calls in CI.,complex
+Create a failure-mode analysis for LLM provider integrations.,complex
+Explain how to handle long-context routing with strict cost controls.,complex
+Debug why a trained classifier is underperforming on complex prompts.,complex
+Design a schema for logging prompt metadata without storing sensitive data.,complex
+"Analyze this architecture and identify bottlenecks, risks, and alternatives.",complex
+Plan a V2 roadmap for a production-grade LLM routing platform.,complex
+Create a nuanced policy for when to escalate from a cheap model to a strong model.,complex
+Design deterministic and LLM-based verification for structured outputs.,complex
+Debug a race condition in request logging under concurrent FastAPI traffic.,complex
+Evaluate whether prompt hashing is enough for privacy and observability.,complex
+Design a cost attribution system for teams using shared API keys.,complex
+Create a detailed rollout strategy for replacing direct LLM calls with a router.,complex

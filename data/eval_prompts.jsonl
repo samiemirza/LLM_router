@@ -1,0 +1,60 @@
+{"id": "eval_001", "prompt": "Rewrite this message professionally: Need the file today.", "expected_tier": "simple", "task_type": "rewrite"}
+{"id": "eval_002", "prompt": "Fix grammar only: He dont have the final version.", "expected_tier": "simple", "task_type": "grammar"}
+{"id": "eval_003", "prompt": "Extract the email address from: Contact maria@company.com for invoice help.", "expected_tier": "simple", "task_type": "extraction"}
+{"id": "eval_004", "prompt": "Extract the phone number from this text: Call 03001234567 before 5 PM.", "expected_tier": "simple", "task_type": "extraction"}
+{"id": "eval_005", "prompt": "Convert this sentence into a polite request: Send me the document.", "expected_tier": "simple", "task_type": "rewrite"}
+{"id": "eval_006", "prompt": "Turn these skills into a comma-separated list: Python SQL FastAPI Docker.", "expected_tier": "simple", "task_type": "formatting"}
+{"id": "eval_007", "prompt": "Return this as JSON with name and role: Ali Khan Data Analyst.", "expected_tier": "simple", "task_type": "json_formatting"}
+{"id": "eval_008", "prompt": "Make this sentence shorter without changing meaning: I am writing to ask for updates.", "expected_tier": "simple", "task_type": "rewrite"}
+{"id": "eval_009", "prompt": "Fix capitalization: i worked at systems limited as an ai intern.", "expected_tier": "simple", "task_type": "formatting"}
+{"id": "eval_010", "prompt": "Extract the date from: The deadline is 30 June 2026.", "expected_tier": "simple", "task_type": "extraction"}
+{"id": "eval_011", "prompt": "Convert this paragraph into three bullet points: The app tracks costs, routes prompts, and logs results.", "expected_tier": "simple", "task_type": "formatting"}
+{"id": "eval_012", "prompt": "Rewrite this Slack message to sound less direct: You forgot to send the update.", "expected_tier": "simple", "task_type": "rewrite"}
+{"id": "eval_013", "prompt": "Return only the company name: I interviewed with Intellia for a summer internship.", "expected_tier": "simple", "task_type": "extraction"}
+{"id": "eval_014", "prompt": "Format this address neatly: house 12 street 4 dha phase 5 karachi.", "expected_tier": "simple", "task_type": "formatting"}
+{"id": "eval_015", "prompt": "Extract the amount from this sentence: The total cost was $42.75.", "expected_tier": "simple", "task_type": "extraction"}
+{"id": "eval_016", "prompt": "Convert this casual line into a formal sentence: Hey can you review my resume?", "expected_tier": "simple", "task_type": "rewrite"}
+{"id": "eval_017", "prompt": "Remove duplicate words: This model model is very very useful.", "expected_tier": "simple", "task_type": "cleanup"}
+{"id": "eval_018", "prompt": "Return only the city mentioned here: The event will be held in Islamabad.", "expected_tier": "simple", "task_type": "extraction"}
+{"id": "eval_019", "prompt": "Fix spelling: I am intrested in artificail inteligence and machne learning.", "expected_tier": "simple", "task_type": "grammar"}
+{"id": "eval_020", "prompt": "Turn this into a resume bullet: I built a dashboard that showed API costs.", "expected_tier": "simple", "task_type": "resume_rewrite"}
+{"id": "eval_021", "prompt": "Summarize this project description into five bullets for a recruiter.", "expected_tier": "moderate", "task_type": "summarization"}
+{"id": "eval_022", "prompt": "Compare FastAPI and Flask for a lightweight ML API.", "expected_tier": "moderate", "task_type": "comparison"}
+{"id": "eval_023", "prompt": "Classify these messages by urgency and topic: payment failed, app crashed, password reset.", "expected_tier": "moderate", "task_type": "classification"}
+{"id": "eval_024", "prompt": "Write a customer update email explaining a one-week delay.", "expected_tier": "moderate", "task_type": "business_writing"}
+{"id": "eval_025", "prompt": "Create a table comparing SQLite, PostgreSQL, and MySQL for an MVP.", "expected_tier": "moderate", "task_type": "structured_analysis"}
+{"id": "eval_026", "prompt": "Analyze these user comments and identify product improvement themes.", "expected_tier": "moderate", "task_type": "analysis"}
+{"id": "eval_027", "prompt": "Turn these rough notes into a clear implementation plan for a dashboard.", "expected_tier": "moderate", "task_type": "planning"}
+{"id": "eval_028", "prompt": "Draft a short proposal for an LLM cost monitoring tool.", "expected_tier": "moderate", "task_type": "business_writing"}
+{"id": "eval_029", "prompt": "Summarize this meeting into decisions, blockers, and action items.", "expected_tier": "moderate", "task_type": "summarization"}
+{"id": "eval_030", "prompt": "Recommend which metrics an LLM routing dashboard should show.", "expected_tier": "moderate", "task_type": "recommendation"}
+{"id": "eval_031", "prompt": "Create acceptance criteria for a /v1/stats API endpoint.", "expected_tier": "moderate", "task_type": "requirements"}
+{"id": "eval_032", "prompt": "Compare rules-based routing and classifier-based routing in a short table.", "expected_tier": "moderate", "task_type": "comparison"}
+{"id": "eval_033", "prompt": "Write a README section explaining mock mode for local testing.", "expected_tier": "moderate", "task_type": "documentation"}
+{"id": "eval_034", "prompt": "Analyze why a cheap model might fail on long-context prompts.", "expected_tier": "moderate", "task_type": "analysis"}
+{"id": "eval_035", "prompt": "Categorize ten example prompts into simple, moderate, and complex tiers.", "expected_tier": "moderate", "task_type": "classification"}
+{"id": "eval_036", "prompt": "Create a JSON schema for logging request metadata.", "expected_tier": "moderate", "task_type": "json_schema"}
+{"id": "eval_037", "prompt": "Summarize an architecture diagram in business-friendly language.", "expected_tier": "moderate", "task_type": "summarization"}
+{"id": "eval_038", "prompt": "Write a concise risk section for using third-party LLM APIs.", "expected_tier": "moderate", "task_type": "business_writing"}
+{"id": "eval_039", "prompt": "Compare cost savings and latency savings for model routing.", "expected_tier": "moderate", "task_type": "comparison"}
+{"id": "eval_040", "prompt": "Turn these roadmap ideas into prioritized milestones.", "expected_tier": "moderate", "task_type": "planning"}
+{"id": "eval_041", "prompt": "Debug this Python error and explain the root cause: TypeError object is not subscriptable.", "expected_tier": "complex", "task_type": "debugging"}
+{"id": "eval_042", "prompt": "Design an architecture for an LLM router with provider fallback and observability.", "expected_tier": "complex", "task_type": "architecture"}
+{"id": "eval_043", "prompt": "Create a strategy for reducing LLM API spend while preserving answer quality.", "expected_tier": "complex", "task_type": "strategy"}
+{"id": "eval_044", "prompt": "Analyze failure modes for LLM-as-judge verification in production.", "expected_tier": "complex", "task_type": "analysis"}
+{"id": "eval_045", "prompt": "Explain step by step how to test provider integrations without paid API calls.", "expected_tier": "complex", "task_type": "testing_strategy"}
+{"id": "eval_046", "prompt": "Design a schema for logging prompts safely without storing sensitive data.", "expected_tier": "complex", "task_type": "privacy_design"}
+{"id": "eval_047", "prompt": "Evaluate tradeoffs between routing by rules and a trained classifier.", "expected_tier": "complex", "task_type": "nuanced_judgment"}
+{"id": "eval_048", "prompt": "Plan a V2 architecture with async verification and historical quality metrics.", "expected_tier": "complex", "task_type": "architecture"}
+{"id": "eval_049", "prompt": "Debug why a trained classifier might route too many prompts to complex models.", "expected_tier": "complex", "task_type": "debugging"}
+{"id": "eval_050", "prompt": "Design a fallback policy for OpenAI and OpenRouter outages.", "expected_tier": "complex", "task_type": "resilience"}
+{"id": "eval_051", "prompt": "Analyze cost, latency, and quality tradeoffs for a multi-provider LLM gateway.", "expected_tier": "complex", "task_type": "analysis"}
+{"id": "eval_052", "prompt": "Create an implementation plan for adding per-team cost attribution.", "expected_tier": "complex", "task_type": "architecture"}
+{"id": "eval_053", "prompt": "Explain how to handle long-context prompts with strict cost controls.", "expected_tier": "complex", "task_type": "strategy"}
+{"id": "eval_054", "prompt": "Design deterministic verification checks for JSON, bullets, and instruction following.", "expected_tier": "complex", "task_type": "verification"}
+{"id": "eval_055", "prompt": "Analyze the security risks of exposing an OpenAI-compatible routing endpoint.", "expected_tier": "complex", "task_type": "security"}
+{"id": "eval_056", "prompt": "Create a detailed rollout plan for migrating an app from direct LLM calls to a router.", "expected_tier": "complex", "task_type": "rollout"}
+{"id": "eval_057", "prompt": "Optimize a request logging design for reliability under concurrent traffic.", "expected_tier": "complex", "task_type": "systems_design"}
+{"id": "eval_058", "prompt": "Evaluate whether prompt hashing is sufficient for privacy-preserving analytics.", "expected_tier": "complex", "task_type": "privacy_analysis"}
+{"id": "eval_059", "prompt": "Design a benchmark methodology for measuring routing savings against a baseline.", "expected_tier": "complex", "task_type": "evaluation"}
+{"id": "eval_060", "prompt": "Create a nuanced escalation policy for when a cheap model response should be retried.", "expected_tier": "complex", "task_type": "policy"}
