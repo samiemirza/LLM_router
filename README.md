@@ -79,6 +79,27 @@ streamlit run dashboard/streamlit_app.py
 
 The dashboard reads the same SQLite database configured by `DATABASE_URL`.
 
+## Deploy Dashboard Snapshot
+
+Streamlit Community Cloud does not have access to your local SQLite database unless you commit a safe data snapshot. To deploy the dashboard with the same summary you see locally:
+
+```bash
+python scripts/export_dashboard_snapshot.py
+git add dashboard/streamlit_app.py scripts/export_dashboard_snapshot.py data/dashboard_snapshot.csv README.md
+git commit -m "Add dashboard snapshot for Streamlit deployment"
+git push
+```
+
+Then deploy in Streamlit Community Cloud with:
+
+```text
+Repository: samiemirza/LLM_router
+Branch: main
+Main file path: dashboard/streamlit_app.py
+```
+
+The deployed dashboard will read live SQLite data when rows exist, otherwise it falls back to `data/dashboard_snapshot.csv`.
+
 ## Train Classifier
 
 ```bash
@@ -211,4 +232,3 @@ Tests use mock mode patterns and do not call paid APIs.
 - Prompt privacy controls and configurable redaction
 - Better classifier datasets and active-learning feedback loops
 - Optional OpenAI-compatible proxy endpoint for drop-in client migration
-

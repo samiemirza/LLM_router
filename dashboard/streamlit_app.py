@@ -16,11 +16,46 @@ if str(PROJECT_ROOT) not in sys.path:
 from app.logging_db import get_all_requests_dataframe, get_stats  # noqa: E402
 
 
+SNAPSHOT_PATH = PROJECT_ROOT / "data" / "dashboard_snapshot.csv"
+
+
+def calculate_stats_from_dataframe(requests_df: pd.DataFrame) -> dict:
+    total_baseline_cost = float(requests_df["baseline_estimated_cost"].sum())
+    total_estimated_savings = float(requests_df["estimated_savings"].sum())
+    savings_percentage = (
+        total_estimated_savings / total_baseline_cost * 100 if total_baseline_cost else 0.0
+    )
+    return {
+        "total_requests": int(len(requests_df)),
+        "total_actual_cost": float(requests_df["cost"].sum()),
+        "total_baseline_cost": total_baseline_cost,
+        "total_estimated_savings": total_estimated_savings,
+        "savings_percentage": savings_percentage,
+        "average_latency_ms": float(requests_df["latency_ms"].mean())
+        if not requests_df.empty
+        else 0.0,
+    }
+
+
+def load_dashboard_data() -> tuple[pd.DataFrame, dict, str]:
+    requests_df = get_all_requests_dataframe()
+    if not requests_df.empty:
+        return requests_df, get_stats(), "SQLite"
+
+    if SNAPSHOT_PATH.exists():
+        snapshot_df = pd.read_csv(SNAPSHOT_PATH)
+        if not snapshot_df.empty:
+            return snapshot_df, calculate_stats_from_dataframe(snapshot_df), "snapshot"
+
+    return requests_df, get_stats(), "empty"
+
+
 st.set_page_config(page_title="LLM Cost Autopilot Dashboard", layout="wide")
 st.title("LLM Cost Autopilot Dashboard")
 
-stats = get_stats()
-requests_df = get_all_requests_dataframe()
+requests_df, stats, data_source = load_dashboard_data()
+if data_source == "snapshot":
+    st.caption("Viewing exported dashboard snapshot.")
 
 metric_cols = st.columns(6)
 metric_cols[0].metric("Total Requests", stats["total_requests"])
@@ -72,4 +107,3 @@ columns = [
     "prompt_preview",
 ]
 st.dataframe(requests_df[columns].head(50), use_container_width=True)
-
